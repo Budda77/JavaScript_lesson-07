@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<title>Document Selectors</title>
+<script src="documentSelectors.js"></script>
+</head>
+<body>
+
+	<!-- -->
+	
+	<!-- get element by Id -->
+	
+
+	<div id = "content-holder">
+		<div id = "content">Select element by id</div>
+	</div>
+
+	<button onclick="selectByElement()">Test connection</button>
+	
+	<button onclick="changeColorToRed()">Change background color to red</button>
+
+<!-- get element by tag name -->
+
+	<table id='custom-table'>
+		<tr>
+			<td>
+				<label>First data
+			 		<input type="radio" name='first' value='First-input'>
+				</label>
+				<label>Second data
+			 		<input type="radio" name='first' value='Second-input'>
+				</label>
+				<label>Third data
+			 		<input type="radio" name='first' value='Third-input'>
+				</label>
+			</td>
+		</tr>
+	</table>
+
+<button onclick="selectByTagName()">switch radioButton</button>
+
+<!-- use query selectors -->
+
+	<ul>
+		<li>This</li>
+		<li>test</li>
+	</ul>
+	<ul>
+		<li>is fully</li>
+		<li>passed</li>
+	</ul>
+
+<button onclick="useQuerySelectors()">extract last data from list</button>
+
+<div id='divWithCustomAttributters'
+data-about='About Logos academy'
+data-current-student-name='Petro Petrovych'> 
+We are walking through the street
+</div>
+
+<button onclick="selectCustomAttributes()">select data-* attributes</button>
+
+
+
+
+
+</body>
+</html>
